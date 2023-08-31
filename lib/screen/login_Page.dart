@@ -25,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
           .signInWithEmailAndPassword(email: email, password: password);
       if (credential.user!.uid.isNotEmpty) {
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => ProductPage(),
+          builder: (context) => NavigationPage(),
         ));
       } else {
         input = false;
