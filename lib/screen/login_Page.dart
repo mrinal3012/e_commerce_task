@@ -106,12 +106,13 @@ class _LoginPageState extends State<LoginPage> {
                                               "Username,email & phone number",
                                           labelText:
                                               "Username,email & phone number",
-                                          prefixIcon: Icon(Icons.email),
                                           border: OutlineInputBorder(
                                               borderRadius:
                                                   BorderRadius.circular(5))),
                                     )),
                                   )),
+                              Expanded(flex: 1, child: input==false?Text("Please valid email & password",style: TextStyle(color: Colors.red),):SizedBox()),
+                              SizedBox(height: 5,),
                               Expanded(
                                   flex: 5,
                                   child: Container(
@@ -136,8 +137,6 @@ class _LoginPageState extends State<LoginPage> {
                                     decoration: InputDecoration(
                                         hintText: "Password",
                                         labelText: "password",
-                                        prefixIcon:
-                                            Icon(Icons.password_outlined),
                                         border: OutlineInputBorder(
                                             borderRadius:
                                                 BorderRadius.circular(5))),
